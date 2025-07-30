@@ -18,8 +18,8 @@ const Header = async () => {
   return (
     <div className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo aligned to the left */}
-        <Link href="/">
+        {/* Logo and App Name aligned to the left */}
+        <Link href="/" className="flex items-center gap-3">
           <Image
             src={"/logo.jpg"}
             alt="logo"
@@ -27,6 +27,9 @@ const Header = async () => {
             width={200}
             className="h-12 w-auto object-contain"
           />
+          <span className="text-3xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 font-mono">
+            ViewMoney
+          </span>
         </Link>
 
         {/* Sign-in/Sign-up or User button aligned to the right */}
